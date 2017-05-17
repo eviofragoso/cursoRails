@@ -1,0 +1,32 @@
+{:uriI"èfile://app/assets/stylesheets/models.pt-BR_arquivos/out.html?type=text/html&id=76c3e3f901d85bee82f89320fa9d75d37522f91792a78faf907dd64792fcd352:ET:load_pathI"app/assets/stylesheets;T:filenameI":app/assets/stylesheets/models.pt-BR_arquivos/out.html;T:	nameI"models.pt-BR_arquivos/out;T:logical_pathI"#models.pt-BR_arquivos/out.html;T:content_typeI"text/html;T:sourceI"…<html>
+<head><title>Store Cookieless RTB Data</title></head>
+<body>
+<script type="text/javascript">
+  var BI_LS_KEY = 'OX_BI';
+  try {
+    var browserId = localStorage.getItem(BI_LS_KEY),
+        BI_QS = 'bi',
+        urlPrefix = 'https://us-u.openx.net',
+        path = '/w/1.0/sd',
+        qa = 'id=537103138&val=bf3389c8f59e397c762b78fe452db4e7',
+        urlList = [ urlPrefix, path ];
+
+    if ( qa ) {
+      urlList = urlList.concat([ '?', qa ]);
+      if ( browserId ){
+        urlList =  urlList.concat([ '&', BI_QS, '=', browserId ]);
+      }
+      var url = urlList.join('');
+      (new Image()).src = url;
+    }
+  } catch(err) {
+    // fail to trigger cookieless sd request
+  }
+</script>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Hfile-digest://app/assets/stylesheets/models.pt-BR_arquivos/out.html;TTF:charsetI"
+utf-8;F:digest"%ZA0…¶ä—ã#ÌCá÷%â‚¥§	§¯Í6‹.WÉºﬂü:lengthi…:dependencies_digest"%Ö4Àﬂè°ã	?îtÍ	¿Ù/›Ì(:ÀD§:idI"E76c3e3f901d85bee82f89320fa9d75d37522f91792a78faf907dd64792fcd352;F:
+mtimel+/àY

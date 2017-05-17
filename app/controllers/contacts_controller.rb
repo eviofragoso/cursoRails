@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
   before_action :set_options_for_select, only: [:new, :edit, :update, :create]
+  http_basic_authenticate_with name: "dhh" , password: "secret", only: :destroy
 
   # GET /contacts
   # GET /contacts.json
@@ -32,7 +33,8 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
+        #fazer o mesmo em update e destroy
+        format.html { redirect_to contacts_path, notice: I18n.t('messages.created') }
         format.json { render :show, status: :created, location: @contact }
       else
         format.html { render :new }

@@ -2,10 +2,7 @@
 <h1>Seja bem-vindo!</h1>
 <h1> <%= params[:controller] %></h1>
 <ul>
-	<li><%= link_to "Types", kinds_path %></li>
-	<li><%= link_to "Contacts", contacts_path %></li>
-	<li><%= link_to "Addresses", addresses_path %></li>
-	<li><%= link_to "Phones", phones_path %></li>
-	<li><%= link_to "Teste de AJAX", phones_path, remote: true %></li>
-</ul>
+	<li><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><%= link_to "Types", kinds_path %></li>
+	<li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span><%= link_to "Contacts", contacts_path %></li>
+
 </div>
